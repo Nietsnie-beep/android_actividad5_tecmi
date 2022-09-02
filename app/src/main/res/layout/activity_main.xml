@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecciona un elemento "
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/uno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="107dp"
+        android:layout_marginBottom="19dp"
+        android:text="sables de luz"
+        app:layout_constraintBottom_toTopOf="@+id/dos"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="44dp" />
+
+    <CheckBox
+        android:id="@+id/dos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:text="Palomera Buzz Lightyeausb"
+        app:layout_constraintTop_toBottomOf="@+id/uno"
+        tools:layout_editor_absoluteX="44dp" />
+
+    <CheckBox
+        android:id="@+id/dos2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="92dp"
+        android:text="Ferrari"
+        app:layout_constraintTop_toBottomOf="@+id/uno"
+        tools:layout_editor_absoluteX="44dp" />
+
+    <CheckBox
+        android:id="@+id/dos3"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="160dp"
+        android:text="Nintendo Switch OLED 64GB"
+        app:layout_constraintTop_toBottomOf="@+id/uno"
+        tools:layout_editor_absoluteX="44dp" />
+
+    <CheckBox
+        android:id="@+id/dos4"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="240dp"
+        android:text="Nintendo NES Classic Edition"
+        app:layout_constraintTop_toBottomOf="@+id/uno"
+        tools:layout_editor_absoluteX="44dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="464dp"
+        android:onClick="onClick"
+        android:text="Button"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteX="155dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
